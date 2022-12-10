@@ -1,0 +1,65 @@
+@import "./../../../scss/variables";
+@import "./../../../scss/mixins/breakpoints";
+@import "./../../../scss/mixins/mixins";
+
+.profileInfo {
+
+}
+
+
+.content {
+  margin-top: -12px;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    padding: 20px;
+  }
+
+}
+
+.about {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: $white;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+
+  @include media-breakpoint-up(md) {
+    width: 90px;
+    height: 90px;
+    margin-top: -90px;
+  }
+}
+
+.avatar_img {
+  width: 100%;
+  display: block;
+}
+
+.bio {
+  padding-left: 12px;
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+
+.img {
+  width: 100%;
+  height: 160px;
+  display: block;
+  object-fit: cover;
+
+  @include media-breakpoint-up(md) {
+    height: 220px;
+  }
+}

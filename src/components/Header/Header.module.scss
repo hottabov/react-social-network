@@ -1,0 +1,97 @@
+@import './../../scss/variables';
+
+
+.header {
+  background: green;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $bg1;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .5);
+  padding: 6px 0;
+  z-index: 1;
+  //height: 40px;
+
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+
+}
+
+
+.logo {
+  width: 24px;
+}
+
+.burger {
+  height: 22px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: transparent;
+  transition: $animate;
+
+  &:hover {
+    background: rgba($black, .06);
+  }
+
+  &:active {
+    border: dotted 1px rgba($black, .1);
+  }
+
+  span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background: $c2;
+    position: relative;
+
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 20px;
+      background: $c2;
+    }
+
+    &:before {
+      top: -5px;
+    }
+
+    &:after {
+      top: 5px;
+    }
+
+  }
+
+
+
+
+}
+
+.active {
+
+  span {
+    background: transparent;
+
+    &:before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import './../../../scss/variables';
+
+.participants {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.participant {
+  display: block;
+  color: $c2;
+  text-decoration: none;
+  padding: 8px 6px;
+  transition: $animate;
+
+  &:hover {
+    background: $c3;
+    border-radius: 6px;
+  }
+
+
+
+}
+
+.active {
+  //color: $white;
+  background: rgba($black, 0.05);
+  border-radius: 8px;
+}

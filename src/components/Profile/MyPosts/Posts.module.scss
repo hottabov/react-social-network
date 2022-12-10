@@ -1,0 +1,41 @@
+@import "./../../../scss/variables";
+@import "./../../../scss/mixins/breakpoints";
+
+
+.posts {
+  background: #e7e7e7;
+
+  @include media-breakpoint-up(md) {
+    padding: 20px;
+  }
+}
+
+.form {
+margin-bottom: 12px;
+  display: flex;
+}
+
+.list {
+
+}
+
+.item {
+display: flex;
+  justify-content: space-between;
+}
+
+.picture {
+  height: 100px;
+  width: 100px;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+

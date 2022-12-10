@@ -1,0 +1,35 @@
+$font-family-root: 'Roboto', sans-serif;
+
+// main colors
+$c1: #0466C8;
+$c2: #1a1a1a;
+$c3: #e9eaea;
+
+$white: #fff;
+$black: #000;
+
+// fonts
+$fontColor: #050505;
+
+// backgrounds
+$bg1: #F8F8F8;
+$bg2: rgba(0, 0, 0, .02);
+
+// borders
+$border1: #E2E4E8;
+
+$animate: all .3 ease;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 375px,
+        smd: 640px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1200px,
+        xxl: 1400px, // MacBook Air
+        xxxl: 1920px,
+        xxxxl: 2500px
+) !default;
+
+$maxWidth: 1000px;

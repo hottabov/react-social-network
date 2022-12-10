@@ -1,0 +1,42 @@
+@import "./../scss/variables";
+@import "./../scss/mixins/breakpoints";
+
+body {
+  color: $c2;
+  font-family: $font-family-root;
+}
+
+svg, img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  padding: 0 12px;
+  margin: 0 auto;
+  max-width: $maxWidth;
+}
+
+.mainContainer {
+
+  padding-top: 50px;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+}
+
+.content {
+  background: white;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+  border-radius: 12px;
+
+
+  @include media-breakpoint-up(md) {
+    border-radius: 12px;
+  }
+}

@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import state from './redux/state';
+import {BrowserRouter} from "react-router-dom";
+import {addPostToState} from "./redux/state";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// addPostToState('I Need Your Clothes, Your Boots & Your Motorcycle')
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <App
+      state={state}
+      addPostToState={addPostToState}
+    />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,0 +1,25 @@
+@import "./../../../scss/variables";
+@import "./../../../scss/mixins/breakpoints";
+@import "./../../../scss/mixins/mixins";
+
+
+.message {
+
+  margin-bottom: 12px;
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.wrap {
+  padding: 12px;
+  border-radius: 12px;
+  background: $white;
+  display: inline-block;
+}
+
+
+

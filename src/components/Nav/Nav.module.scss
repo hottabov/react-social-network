@@ -1,0 +1,66 @@
+@import "./../../scss/variables";
+@import "./../../scss/mixins/breakpoints";
+@import "./../../scss/mixins/mixins";
+
+.nav {
+  background: $white;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+  overflow: hidden;
+  position: fixed;
+  top: 35px;
+  right: 12px;
+  width: 200px;
+  z-index: 2;
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    width: 220px;
+    display: block;
+    position: unset;
+    top: unset;
+    right: unset;
+  }
+}
+
+.list {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  //&.active {
+  //  color: blue;
+  //}
+
+}
+
+.item {
+
+}
+
+.link {
+
+  color: $c1;
+  transition: $animate;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  background: $white;
+
+  &:hover {
+    background: rgba(0,0,0,.05);
+  }
+
+  &.active {
+    color: red;
+
+  }
+
+
+
+  @include media-breakpoint-up(md) {
+    //font-size: 40px;
+  }
+
+}

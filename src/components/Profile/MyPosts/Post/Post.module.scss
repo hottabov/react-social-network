@@ -1,0 +1,35 @@
+.posts {
+}
+
+.form {
+margin-bottom: 12px;
+  display: flex;
+}
+
+.list {
+
+}
+
+.item {
+display: flex;
+  justify-content: space-between;
+}
+
+.picture {
+  height: 100px;
+  width: 100px;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.content {
+  width: calc(100% - 100px - 14px);
+  margin: 12px 0;
+}
+
+
+
