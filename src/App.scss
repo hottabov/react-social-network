@@ -5,16 +5,13 @@
 @import "scss/global";
 
 .App {
-
   background: $bg1;
-
-
 }
 
 
 .footer {
   height: 40px;
-  background: #61dafb;
+  background: $bg1;
   grid-area: footer;
   margin-top: 12px;
 }

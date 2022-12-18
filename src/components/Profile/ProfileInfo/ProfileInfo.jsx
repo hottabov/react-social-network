@@ -11,7 +11,7 @@ const ProfileInfo = (props) => {
         <div className={s.about}>
           <div className={s.avatar}>
             <img className={s.avatar_img}
-                 src="https://whatsism.com/uploads/posts/2018-07/1530546770_rmk_vdjbx10.jpg"
+                 src="https://picsum.photos/200?random"
                  alt=""/>
           </div>
           <div className={s.bio}>

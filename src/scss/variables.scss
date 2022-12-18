@@ -1,9 +1,10 @@
 $font-family-root: 'Roboto', sans-serif;
 
 // main colors
-$c1: #0466C8;
+$c1: #54749A;
 $c2: #1a1a1a;
 $c3: #e9eaea;
+$c4: #ccc;
 
 $white: #fff;
 $black: #000;
@@ -15,10 +16,11 @@ $fontColor: #050505;
 $bg1: #F8F8F8;
 $bg2: rgba(0, 0, 0, .02);
 
+
 // borders
 $border1: #E2E4E8;
 
-$animate: all .3 ease;
+$animate: all .3s ease;
 
 $grid-breakpoints: (
         xs: 0,

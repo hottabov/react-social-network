@@ -1,18 +1,32 @@
 @import "./../../../scss/variables";
 @import "./../../../scss/mixins/breakpoints";
+@import "./../../../scss/buttons";
 
 
 .posts {
-  background: #e7e7e7;
+  //background: #e7e7e7;
 
   @include media-breakpoint-up(md) {
     padding: 20px;
   }
 }
 
-.form {
-margin-bottom: 12px;
-  display: flex;
+.wrapper {
+  padding: 12px;
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+
+
 }
 
 .list {
@@ -20,7 +34,7 @@ margin-bottom: 12px;
 }
 
 .item {
-display: flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -34,6 +48,34 @@ display: flex;
   display: block;
   object-fit: cover;
 }
+
+.button {
+  &__addpost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background: rgba($c1, 1);
+    border: 0;
+    padding: 4px 16px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    width: 130px;
+    color: $white;
+    cursor: pointer;
+    transition: $animate;
+
+    &:hover {
+      background: rgba($c1, .8);
+    }
+
+    svg {
+      width: 28px;
+    }
+  }
+
+}
+
 
 
 

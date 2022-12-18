@@ -1,8 +1,10 @@
+@import './../../../../scss/variables';
+
 .posts {
 }
 
 .form {
-margin-bottom: 12px;
+  margin-bottom: 12px;
   display: flex;
 }
 
@@ -11,24 +13,69 @@ margin-bottom: 12px;
 }
 
 .item {
-display: flex;
+
+  margin-bottom: 16px;
+}
+
+.wrapper {
+  display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .picture {
-  height: 100px;
-  width: 100px;
+  //height: 60px;
+  //width: 60px;
+  //border-radius: 6px;
+  //overflow: hidden;
+
 }
 
 .img {
-  width: 100%;
   display: block;
   object-fit: cover;
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .content {
-  width: calc(100% - 100px - 14px);
-  margin: 12px 0;
+  width: calc(100% - 60px - 14px);
+
+}
+
+.message {
+  background: $bg1;
+  padding: 8px;
+  border-radius: 8px;
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -8px;
+  }
+}
+
+.likes {
+  padding: 4px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: $c4;
+  height: 18px;
+  border-radius: 18px;
+
+
+  &__heart {
+    width: 12px;
+    margin-right: 3px;
+  }
+
+  &__count {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 

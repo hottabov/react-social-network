@@ -3,9 +3,9 @@
 @import "./../../scss/mixins/mixins";
 
 .nav {
-  background: $white;
-  border-radius: 12px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+  //background: $white;
+  //border-radius: 12px;
+  //box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
   overflow: hidden;
   position: fixed;
   top: 35px;
@@ -40,20 +40,24 @@
 }
 
 .link {
-
   color: $c1;
-  transition: $animate;
   text-decoration: none;
   display: block;
-  padding: 8px 12px;
-  background: $white;
+  padding: 8px 6px;
+  position: relative;
+  background: rgba(0,0,0,0);
+  transition: $animate;
+
 
   &:hover {
     background: rgba(0,0,0,.05);
+    border-radius: 6px;
+
   }
 
   &.active {
-    color: red;
+    background: rgba(0,0,0,.05);
+    border-radius: 6px;
 
   }
 

@@ -12,7 +12,6 @@ import News from "./components/News/News";
 function App(props) {
 
   return (
-
     <div className="App">
       <Header/>
       <div className="container">
@@ -20,20 +19,12 @@ function App(props) {
           <Nav/>
           <div className="content">
             <Routes>
-              <Route path="/" element={
-                <Profile
-                  postData={props.state.profilePage.postData}
-                  // state={props.state.profilePage}
-                  addPostToState={props.addPostToState}
-                />}
-              />
               <Route path="/profile" element={
                 <Profile
-                  postData={props.state.profilePage.postData}
-                  // state={props.state.profilePage}
-                  addPostToState={props.addPostToState}
-                />}
-              />
+                  profilePage={props.state.profilePage}
+                  dispatch={props.dispatch}
+                />
+              }/>
               <Route path="/messages/*" element={
                 <Chats
                   participantsData={props.state.chatsPage.participantsData}
@@ -51,7 +42,6 @@ function App(props) {
         footer
       </footer>
     </div>
-
 
   );
 }
